@@ -1,0 +1,280 @@
+@import "@/public.scss";
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+button::after {
+    border: none;
+}
+
+button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background-color: transparent;
+    @include fontStyle;
+    &.button-hover {
+        color: inherit;
+        opacity: $hoverOpacity;
+        background-color: transparent;
+    }
+}
+
+input {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    @include fontStyle;
+}
+
+image {
+    display: block;
+    margin: auto;
+}
+
+page {
+    background: $backgroundColor;
+}
+
+
+
+// flex
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-center {
+    @extend .flex;
+    @extend .flex-row-center;
+    @extend .flex-column-center;
+}
+.flex-row-center {
+    justify-content: center;
+}
+.flex-row-start {
+    justify-content: flex-start;
+}
+.flex-row-end {
+    justify-content: flex-end;
+}
+.flex-row-between {
+    justify-content: space-between;
+}
+.flex-row-around {
+    justify-content: space-around;
+}
+.flex-column-center {
+    align-items: center;
+}
+.flex-column-start {
+    align-items: flex-start;
+}
+.flex-column-end {
+    align-items: flex-end;
+}
+.flex1 {
+    flex: 1;
+}
+
+
+
+// 平台图标
+.platform-icon {
+    margin: 0;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 6rpx;
+}
+.platform-text {
+    margin-left: 15rpx;
+}
+
+
+
+// 报价弹窗&笔记链接弹窗
+.offer-container {
+    width: 600rpx;
+    padding: 80rpx 30rpx 40rpx;
+    background: #fff;
+    .offer-picture {
+        width: 400rpx;
+        margin: 0 auto;
+    }
+    .offer-title {
+        margin-top: 20rpx;
+        text-align: center;
+        @include fontStyle;
+    }
+    .offer-input {
+        margin-top: 30rpx;
+        position: relative;
+        .input-icon {
+            position: absolute;
+            left: 0;
+            bottom: 0rpx;
+            @include fontStyle($color, 40rpx, 70rpx);
+        }
+        .input-content {
+            padding: 0 60rpx;
+            border-bottom: 1px solid #eee;
+            &.focus {
+                border-bottom-color: $color;
+            }
+        }
+    }
+    .offer-button {
+        margin-top: 30rpx;
+        button {
+            height: 80rpx;
+            border-radius: 80rpx;
+            @include fontStyle(#fff, 32rpx, 80rpx);
+            @include backgroundGradientColor;
+        }
+    }
+}
+
+
+
+// 上传图片
+.upload-button {
+    button {
+        width: 160rpx;
+        height: 160rpx;
+        border-radius: 10rpx;
+        background: #f4f4f4;
+        @include fontStyle(#ccc, 72rpx, 160rpx);
+        &.active {
+            background: #eee;
+        }
+    }
+}
+.upload-picture {
+    width: 160rpx;
+    height: 160rpx;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10rpx;
+    border: 1px solid #eee;
+    .picture-delete {
+        position: absolute;
+        z-index: 5;
+        right: 6rpx;
+        top: 6rpx;
+        width: 48rpx;
+        height: 48rpx;
+        background: red;
+        border-radius: 50%;
+        @include fontStyle(#fff, 20rpx, 48rpx);
+    }
+    .picture-reload {
+        position: absolute;
+        z-index: 5;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 48rpx;
+        background: red;
+        font-weight: bold;
+        @include fontStyle(#fff, 24rpx, 48rpx);
+    }
+}
+
+
+
+// 缺省状态
+.list-default {
+    text-align: center;
+    padding: 300rpx 0;
+    .default-icon {
+        @include fontStyle($color, 120rpx, 120rpx);
+    }
+    .default-text {
+        margin-top: 20rpx;
+        @include fontStyle(#666, 28rpx, 40rpx);
+    }
+}
+
+
+
+// 页面底部按钮
+.page-button {
+    height: 100rpx;
+    font-weight: bold;
+    @include pageButtonFixed;
+    @include backgroundGradientColor;
+    @include fontStyle(#fff, 32rpx, 100rpx);
+    &.button-hover {
+        color: #fff;
+    }
+}
+.page-bottom {
+    padding-bottom: 130rpx;
+}
+
+
+
+// navbar
+.navbar {
+    padding-left: $space;
+    .navbar-picture {
+        width: 60rpx;
+        height: 60rpx;
+    }
+    .navbar-crumbs {
+        border-radius: 60rpx;
+        border: 1rpx solid #eee;
+        button {
+            width: 68rpx;
+            height: 56rpx;
+            .icon {
+                @include fontStyle(#666, 30rpx);
+            }
+        }
+        .split-line {
+            width: 1rpx;
+            height: 30rpx;
+            background: #eee;
+        }
+    }
+}
+
+
+
+// goTop
+.goTop {
+    background: $color;
+    z-index: 999;
+    width: 80rpx;
+    height: 80rpx;
+    text-align: center;
+    border-radius: 50%;
+    @include fontStyle(#fff, 32rpx, 80rpx);
+    position: fixed;
+    bottom: 50rpx;
+    right: $space;
+    animation: goTopMove .3s;
+}
+@keyframes goTopMove {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

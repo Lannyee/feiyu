@@ -1,0 +1,380 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/task/task",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "每日任务"
+			}
+		},
+		{
+			"path": "pages/celebrity/celebrity",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "达人库"
+			}
+		},
+		{
+			"path": "pages/customer/customer",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/applyGoods/goodsDetail",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/applyGoods/goodsOrder",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "确认订单"
+			}
+		},
+		{
+			"path": "pages/applyGoods/goodsShare",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "商品分享海报"
+			}
+		},
+		{
+			"path": "pages/rule/rule",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "规则说明"
+			}
+		},
+		{
+			"path": "pages/personal/personal",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "pages/account/money",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的鱼币"
+			}
+		},
+		{
+			"path": "pages/account/credit",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的蟹币"
+			}
+		},
+		{
+			"path": "pages/account/card",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的奖券"
+			}
+		},
+		{
+			"path": "pages/withdraw/withdraw",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "鱼币提现"
+			}
+		},
+		{
+			"path": "pages/withdraw/record",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "提现记录"
+			}
+		},
+		{
+			"path": "pages/bankCard/bankCard",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的收款账户"
+			}
+		},
+		{
+			"path": "pages/bankCard/binding",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "收款账户绑定"
+			}
+		},
+		{
+			"path": "pages/lottery/lottery",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "摸一摸抽奖"
+			}
+		},
+		{
+			"path": "pages/lottery/record",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "中奖记录"
+			}
+		},
+		{
+			"path": "pages/apply/apply",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的试用"
+			}
+		},
+		{
+			"path": "pages/apply/auction",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "拍单信息"
+			}
+		},
+		{
+			"path": "pages/apply/auctionView",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "拍单信息"
+			}
+		},
+		{
+			"path": "pages/apply/manuscript",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "初稿信息"
+			}
+		},
+		{
+			"path": "pages/apply/manuscriptView",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "初稿信息"
+			}
+		},
+		{
+			"path": "pages/apply/auxiliary",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "辅助说明"
+			}
+		},
+		{
+			"path": "pages/apply/auxiliaryView",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "辅助说明"
+			}
+		},
+		{
+			"path": "pages/apply/editAddress",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "修改地址"
+			}
+		},
+		{
+			"path": "pages/logistics/logistics",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "物流信息"
+			}
+		},
+		{
+			"path": "pages/address/address",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的地址"
+			}
+		},
+		{
+			"path": "pages/address/edit",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "编辑地址"
+			}
+		},
+		{
+			"path": "pages/address/add",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "新建地址"
+			}
+		},
+		{
+			"path": "pages/collect/collect",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/cashGoods/goodsDetail",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/cashGoods/goodsOrder",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "确认订单"
+			}
+		},
+		{
+			"path": "pages/cash/cash",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的兑换"
+			}
+		},
+		{
+			"path": "pages/question/question",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "常见问题"
+			}
+		},
+		{
+			"path": "pages/platform/platform",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的平台账号"
+			}
+		},
+		{
+			"path": "pages/platform/binding",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "平台账号绑定"
+			}
+		},
+		{
+			"path": "pages/finishApply/finishApply",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "历史接单明细"
+			}
+		},
+		{
+			"path": "pages/commerce/commerce",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "商务合作"
+			}
+		},
+		{
+			"path": "pages/sensitive/sensitive",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "敏感词检测"
+			}
+		},
+		{
+			"path": "pages/feedback/feedback",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "用户反馈"
+			}
+		},
+		{
+			"path": "pages/goodsSearch/search",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/goodsSearch/filter",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "筛选"
+			}
+		},
+		{
+			"path": "pages/goodsSearch/result",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "搜索结果"
+			}
+		},
+		{
+			"path": "pages/guide/handbook",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "新手指南"
+			}
+		},
+		{
+			"path": "pages/guide/step",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "新人指引"
+			}
+		},
+		{
+			"path": "pages/fail/fail",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "系统错误"
+			}
+		},
+		{
+			"path": "pages/annunciate/annunciate",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "通告群"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#fff"
+	},
+	"tabBar": {
+	    "color": "#aaa",
+	    "selectedColor": "#f36e96",
+	    "backgroundColor": "#FFFFFF",
+	    "borderStyle": "black",
+		"list": [
+			{
+			    "pagePath": "pages/home/home",
+			    "iconPath": "static/images/tabbar/icon1.png",
+			    "selectedIconPath": "static/images/tabbar/active1.png",
+			    "text": "商品试用"
+			},
+			{
+			    "pagePath": "pages/celebrity/celebrity",
+			    "iconPath": "static/images/tabbar/icon3.png",
+			    "selectedIconPath": "static/images/tabbar/active3.png",
+			    "text": "达人库"
+			},
+			{
+			    "pagePath": "pages/customer/customer",
+			    "iconPath": "static/images/tabbar/icon4.png",
+			    "selectedIconPath": "static/images/tabbar/active4.png",
+			    "text": "个人中心"
+			}
+		]
+	}
+}
